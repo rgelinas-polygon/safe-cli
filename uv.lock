@@ -1976,7 +1976,7 @@ requires-dist = [
     { name = "prompt-toolkit", specifier = ">=3" },
     { name = "pygments", specifier = ">=2" },
     { name = "requests", specifier = ">=2" },
-    { name = "safe-eth-py", directory = "safe-eth-py" },
+    { name = "safe-eth-py", editable = "safe-eth-py" },
     { name = "tabulate", specifier = ">=0.8" },
     { name = "trezor", marker = "extra == 'trezor'", specifier = "==0.13.10" },
     { name = "truststore", specifier = ">=0.10.3" },
@@ -1986,7 +1986,7 @@ provides-extras = ["ledger", "trezor"]
 
 [[package]]
 name = "safe-eth-py"
-source = { directory = "safe-eth-py" }
+source = { editable = "safe-eth-py" }
 dependencies = [
     { name = "packaging" },
     { name = "py-evm" },

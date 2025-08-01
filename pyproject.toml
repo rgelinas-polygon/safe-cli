@@ -104,4 +104,4 @@ warn_redundant_casts = true
 warn_unused_configs = true
 
 [tool.uv.sources]
-safe-eth-py = { path = "safe-eth-py" }
+safe-eth-py = { path = "safe-eth-py", editable = true }
