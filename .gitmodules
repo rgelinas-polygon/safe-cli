@@ -1,0 +1,3 @@
+[submodule "safe-eth-py"]
+	path = safe-eth-py
+	url = polygon-git:rgelinas-polygon/safe-eth-py.git

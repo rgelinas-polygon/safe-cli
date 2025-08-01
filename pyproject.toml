@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "Command Line Interface for Safe"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 authors = [{ name = "Uxío Fuentefría", email = "uxio@safe.global" }]
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -62,11 +62,7 @@ packages = ["/src/safe_cli"]
 source_pkgs = ["safe_cli", "tests"]
 branch = true
 parallel = true
-omit = [
-    "*__init__.py*",
-    "*tests*",
-    "*/migrations/*"
-]
+omit = ["*__init__.py*", "*tests*", "*/migrations/*"]
 
 [tool.coverage.paths]
 safe_cli = ["src/safe_cli", "*/safe-cli/src/safe_cli"]
@@ -105,3 +101,6 @@ ignore_missing_imports = true
 warn_unused_ignores = true
 warn_redundant_casts = true
 warn_unused_configs = true
+
+[tool.uv.sources]
+safe-eth-py = { path = "safe-eth-py" }
