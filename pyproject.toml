@@ -28,6 +28,7 @@ dependencies = [
     "requests>=2",
     "safe-eth-py>=7",
     "tabulate>=0.8",
+    "truststore>=0.10.3",
     "typer>=0.14.0",
 ]
 
